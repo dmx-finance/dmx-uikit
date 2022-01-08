@@ -48,9 +48,9 @@ const Logo: React.FC<LogoProps> = ({ isDark, isPushed, ...props }) => {
     <IconContainer isMobile={isMobile} isPushed>
       <img {...props} src="/images/tokens/dMX.png" alt="" width="512" height="512" />
       {isPushed ? (
-        <span className="desktop-icon" style={{ color: "#52D784", marginLeft: "30px", fontSize: "24px", fontWeight: 500 }}>
+        <span className="desktop-icon" style={{ color: "#FFF", marginLeft: "30px", fontSize: "24px", fontWeight: 500 }}>
           dear
-          <span style={{ color: "#60D5DC" }}>MoonX</span>
+          <span style={{ color: "#FFF" }}>MoonX</span>
         </span>
       ) : (
         <></>

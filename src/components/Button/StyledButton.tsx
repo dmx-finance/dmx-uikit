@@ -46,7 +46,7 @@ const StyledButton = styled.button<BaseButtonProps>`
   /* border: 0;
   border-radius: 0.5rem;
   box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset; */
-  box-shadow: 2px 1000px 1px #212230 inset;
+  // box-shadow: 2px 1000px 1px #212230 inset;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
@@ -62,10 +62,10 @@ const StyledButton = styled.button<BaseButtonProps>`
   border-radius: 0.5rem;
   //color: ${({ theme }) => (theme.isDark ? `#fff` : `#0ad9e4`)};
 
-  border: solid 3px transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #42d784, #60d5dc);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  border: solid 1px transparent;
+  // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #42d784, #60d5dc);
+  // background-origin: border-box;
+  // background-clip: content-box, border-box;
   background: ${({ theme, variant }) => variant === variants.TERTIARY || variant === variants.TEXT ? theme.colors[variant] : ''};
   
   ${(props) =>

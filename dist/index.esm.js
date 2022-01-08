@@ -188,8 +188,9 @@ var scaleVariants = (_a = {},
     _a);
 var styleVariants = (_b = {},
     _b[variants.PRIMARY] = {
-        backgroundColor: "primary",
+        backgroundColor: "transparent",
         color: "white",
+        borderColor: "primary",
     },
     _b[variants.SECONDARY] = {
         backgroundColor: "transparent",
@@ -207,7 +208,8 @@ var styleVariants = (_b = {},
         color: "primary",
     },
     _b[variants.SUBTLE] = {
-        backgroundColor: "farmBackground",
+        backgroundColor: "transparent",
+        borderColor: "primary",
         color: "text",
     },
     _b[variants.DANGER] = {
@@ -224,7 +226,8 @@ var styleVariants = (_b = {},
         boxShadow: "none",
     },
     _b[variants.TOGGLE] = {
-        backgroundColor: "toggleBackground",
+        backgroundColor: "transparent",
+        borderColor: "primary",
         color: "text",
     },
     _b);
@@ -240,7 +243,7 @@ var getOpacity = function (_a) {
     var _b = _a.$isLoading, $isLoading = _b === void 0 ? false : _b;
     return $isLoading ? ".5" : "1";
 };
-var StyledButton = styled.button(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  align-items: center;\n  /* border: 0;\n  border-radius: 0.5rem;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset; */\n  box-shadow: 2px 1000px 1px #212230 inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  border-radius: 0.5rem;\n  //color: ", ";\n\n  border: solid 3px transparent;\n  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #42d784, #60d5dc);\n  background-origin: border-box;\n  background-clip: content-box, border-box;\n  background: ", ";\n  \n  ", "\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  /* border: 0;\n  border-radius: 0.5rem;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset; */\n  box-shadow: 2px 1000px 1px #212230 inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  border-radius: 0.5rem;\n  //color: ", ";\n\n  border: solid 3px transparent;\n  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #42d784, #60d5dc);\n  background-origin: border-box;\n  background-clip: content-box, border-box;\n  background: ", ";\n  \n  ",
+var StyledButton = styled.button(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  align-items: center;\n  /* border: 0;\n  border-radius: 0.5rem;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset; */\n  // box-shadow: 2px 1000px 1px #212230 inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  border-radius: 0.5rem;\n  //color: ", ";\n\n  border: solid 1px transparent;\n  // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #42d784, #60d5dc);\n  // background-origin: border-box;\n  // background-clip: content-box, border-box;\n  background: ", ";\n  \n  ", "\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  /* border: 0;\n  border-radius: 0.5rem;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset; */\n  // box-shadow: 2px 1000px 1px #212230 inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  border-radius: 0.5rem;\n  //color: ", ";\n\n  border: solid 1px transparent;\n  // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #42d784, #60d5dc);\n  // background-origin: border-box;\n  // background-clip: content-box, border-box;\n  background: ", ";\n  \n  ",
     "\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ",
     "\n  ",
     "\n  ", "\n  ", "\n"])), getOpacity, function (_a) {
@@ -1289,7 +1292,7 @@ var Link = function (_a) {
     return React.createElement(StyledLink, __assign({ as: "a", bold: true }, internalProps, props));
 };
 Link.defaultProps = {
-    color: "#6DD784",
+    color: "#FFF",
 };
 var templateObject_1$r;
 
@@ -1386,11 +1389,11 @@ var templateObject_1$v, templateObject_2$9, templateObject_3$3, templateObject_4
 
 var scaleKeyValues = {
     sm: {
-        handleHeight: "16px",
-        handleWidth: "16px",
+        handleHeight: "14px",
+        handleWidth: "14px",
         handleLeft: "2px",
         handleTop: "2px",
-        checkedLeft: "calc(100% - 18px)",
+        checkedLeft: "calc(100% - 16px)",
         toggleHeight: "20px",
         toggleWidth: "36px",
     },
@@ -1419,7 +1422,7 @@ var Input$1 = styled.input(templateObject_2$a || (templateObject_2$a = __makeTem
     var theme = _a.theme;
     return theme.shadows.focus;
 });
-var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 0.5rem;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 0.5rem;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
+var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 0.5rem;\n  border: 1px solid #333;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 0.5rem;\n  border: 1px solid #333;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
     return theme.colors[checked ? "success" : "input"];
 }, function (_a) {
@@ -2141,9 +2144,9 @@ var Logo = function (_a) {
     var isMobile = isXl === false;
     return (React.createElement(IconContainer, { isMobile: isMobile, isPushed: true },
         React.createElement("img", __assign({}, props, { src: "/images/tokens/dMX.png", alt: "", width: "512", height: "512" })),
-        isPushed ? (React.createElement("span", { className: "desktop-icon", style: { color: "#52D784", marginLeft: "30px", fontSize: "24px", fontWeight: 500 } },
+        isPushed ? (React.createElement("span", { className: "desktop-icon", style: { color: "#FFF", marginLeft: "30px", fontSize: "24px", fontWeight: 500 } },
             "dear",
-            React.createElement("span", { style: { color: "#60D5DC" } }, "MoonX"))) : (React.createElement(React.Fragment, null))));
+            React.createElement("span", { style: { color: "#FFF" } }, "MoonX"))) : (React.createElement(React.Fragment, null))));
 };
 var templateObject_1$y, templateObject_2$c, templateObject_3$6;
 
@@ -2660,7 +2663,7 @@ MenuButton.defaultProps = {
 };
 var templateObject_1$D;
 
-var StyledLink$2 = styled(Link$1)(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  // .mobile-icon {\n  //   width: 32px;\n  //   ", " {\n  //     display: none;\n  //   }\n  // }\n  img.desktop-icon {\n    width: 55px;\n    height: auto;\n    display: block;\n  }\n  span.desktop-icon {\n    width: 55px;\n    height: auto;\n    display: none;\n    ", " {\n      /* display: block; */\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  // .mobile-icon {\n  //   width: 32px;\n  //   ", " {\n  //     display: none;\n  //   }\n  // }\n  img.desktop-icon {\n    width: 55px;\n    height: auto;\n    display: block;\n  }\n  span.desktop-icon {\n    width: 55px;\n    height: auto;\n    display: none;\n    ", " {\n      /* display: block; */\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n  }\n"])), function (_a) {
+var StyledLink$2 = styled(Link$1)(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  // .mobile-icon {\n  //   width: 32px;\n  //   ", " {\n  //     display: none;\n  //   }\n  // }\n  img.desktop-icon {\n    width: 48px;\n    height: auto;\n    display: block;\n  }\n  span.desktop-icon {\n    width: 85px;\n    height: auto;\n    display: none;\n    ", " {\n      /* display: block; */\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  // .mobile-icon {\n  //   width: 32px;\n  //   ", " {\n  //     display: none;\n  //   }\n  // }\n  img.desktop-icon {\n    width: 48px;\n    height: auto;\n    display: block;\n  }\n  span.desktop-icon {\n    width: 85px;\n    height: auto;\n    display: none;\n    ", " {\n      /* display: block; */\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
@@ -2925,7 +2928,7 @@ var LinkLabel = styled.div(templateObject_2$f || (templateObject_2$f = __makeTem
     var isPushed = _a.isPushed, theme = _a.theme, inSpirit = _a.inSpirit;
     return (!isPushed && "transparent") || (inSpirit === "noInSpirit" && theme.colors.textSubtle) || "#35b9c0";
 });
-var MenuEntry = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  border-radius: 4px;\n  background-color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    border-radius: 4px;\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  border-radius: 4px;\n  background-color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    border-radius: 4px;\n    background-color: ",
+var MenuEntry = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  color: ", ";\n  border-radius: 4px;\n  background-color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    border-radius: 4px;\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  color: ", ";\n  border-radius: 4px;\n  background-color: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    border-radius: 4px;\n    background-color: ",
     ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 32px" : "0 16px");
@@ -2933,20 +2936,17 @@ var MenuEntry = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTem
     var secondary = _a.secondary;
     return (secondary ? "14px" : "16px");
 }, function (_a) {
-    var secondary = _a.secondary, theme = _a.theme;
-    return (secondary ? theme.colors.background : "transparent");
-}, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 }, function (_a) {
     var isActive = _a.isActive; _a.theme;
-    return (isActive ? "rgba(96, 213, 220, 0.15)" : "none");
+    return (isActive ? "#41575826" : "none");
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme, inSpirit = _a.inSpirit;
-    return inSpirit === "noInSpirit" ? theme.colors.tertiary : "rgba(109, 215, 132, 0.15)";
+    return inSpirit === "noInSpirit" ? theme.colors.tertiary : "#4157583b";
 }, rainbowAnimation, function (_a) {
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;
@@ -3116,12 +3116,12 @@ var InfoLinks = React.memo(SocialLinks$4, function () { return true; });
 
 var Container$3 = styled.div(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 0;\n  background: ", ";\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  // border-top: solid 1px #42d784;\n  // border-bottom: solid 1px #42d784;\n  border-bottom-right-radius: 8px;\n  border-bottom-left-radius: 8px;\n"], ["\n  flex: none;\n  padding: 8px 0;\n  background: ", ";\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  // border-top: solid 1px #42d784;\n  // border-bottom: solid 1px #42d784;\n  border-bottom-right-radius: 8px;\n  border-bottom-left-radius: 8px;\n"])), function (_a) {
     var theme = _a.theme;
-    return (theme.isDark ? "#0D0E21" : "#E6FDFF");
+    return (theme.isDark ? "#040404" : "#E6FDFF");
 });
 var SocialEntry = styled.div(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  width: 100%;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n  width: 100%;\n"])), MENU_ENTRY_HEIGHT);
 var PriceGroup = styled.div(templateObject_3$b || (templateObject_3$b = __makeTemplateObject(["\n  display: flex;\n  justify-content: center;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  justify-content: center;\n  padding: 0 8px;\n"])));
-var Price = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"], ["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: rgba(109, 215, 132, 0.15);\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"])), PRICE_ENTRY_HEIGHT);
-var FantomPrice = styled(Price)(templateObject_5$3 || (templateObject_5$3 = __makeTemplateObject(["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"], ["\n  background-color: #002943;\n  a {\n    color: #1C9BCA;\n  }\n"])));
+var Price = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: #6dd7840f;\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"], ["\n  flex: 1;\n  height: 42px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 8px;\n  border-radius: 4px;\n  background-color: #6dd7840f;\n  margin: 0 2px;\n  // border-bottom: 1px solid #42BE71;\n"])), PRICE_ENTRY_HEIGHT);
+var FantomPrice = styled(Price)(templateObject_5$3 || (templateObject_5$3 = __makeTemplateObject(["\n  background-color: #6dd7840f;\n  // a {\n  //   color: #1C9BCA;\n  // }\n"], ["\n  background-color: #6dd7840f;\n  // a {\n  //   color: #1C9BCA;\n  // }\n"])));
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd, ethPriceUsd = _a.ethPriceUsd; _a.currentLang; _a.langs; _a.setLang;
     if (!isPushed) {
@@ -3149,7 +3149,7 @@ var StyledPanel = styled.div(templateObject_1$K || (templateObject_1$K = __makeT
     ";\n  */\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-width: 1px;\n    // border-image: linear-gradient(to top, #42d785, rgba(0, 0, 0, 0)) 0% 100%;\n    width: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.isDark
-        ? "linear-gradient(to bottom, rgb(21, 30, 49) 40%, #0d0e21 80%)"
+        ? "linear-gradient(to bottom,rgb(0 0 0) 40%,#040404 80%)"
         : "linear-gradient(to top, #E6FDFF 40%, #FFFFFF 80%)";
 }, function (_a) {
     var isPushed = _a.isPushed;
@@ -3444,14 +3444,11 @@ var UserBlock = function (_a) {
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
     var glowing = keyframes(templateObject_1$N || (templateObject_1$N = __makeTemplateObject([" \n  0% {\n    background-color: #212230;\n    box-shadow: rgb(96 213 220) 0px 0px 20px;\n  }\n  20%{\n    background-color: #212230;\n    box-shadow: 0 0 25px rgb(96 213 220);\n  }\n  40% {\n    background-color: #212230;\n    box-shadow: 0 0 15px rgb(96 213 220);\n  }\n  60% {\n    background-color: #212230;\n    box-shadow: 0 0 10px rgb(96 213 220);\n  }\n  80% {\n    background-color: #212230;\n    box-shadow: 0 0 15px rgb(96 213 220);\n  }\n  100% {\n    background-color: #212230;\n    box-shadow: 0 0 20px rgb(96 213 220);\n  }\n"], [" \n  0% {\n    background-color: #212230;\n    box-shadow: rgb(96 213 220) 0px 0px 20px;\n  }\n  20%{\n    background-color: #212230;\n    box-shadow: 0 0 25px rgb(96 213 220);\n  }\n  40% {\n    background-color: #212230;\n    box-shadow: 0 0 15px rgb(96 213 220);\n  }\n  60% {\n    background-color: #212230;\n    box-shadow: 0 0 10px rgb(96 213 220);\n  }\n  80% {\n    background-color: #212230;\n    box-shadow: 0 0 15px rgb(96 213 220);\n  }\n  100% {\n    background-color: #212230;\n    box-shadow: 0 0 20px rgb(96 213 220);\n  }\n"])));
-    var OwnButtonDisconnected = styled(Button)(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n    border-radius: 0.5rem;\n    color: ", ";\n    border: solid 3px #0ae4b5;\n    background-clip: content-box, border-box;\n    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n      linear-gradient(90deg, #0d0e21, #0d0e21);\n    animation: ", " ease-in-out 2s infinite;\n    &:hover {\n      opacity: 0.6;\n    }\n  "], ["\n    border-radius: 0.5rem;\n    color: ", ";\n    border: solid 3px #0ae4b5;\n    background-clip: content-box, border-box;\n    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n      linear-gradient(90deg, #0d0e21, #0d0e21);\n    animation: ", " ease-in-out 2s infinite;\n    &:hover {\n      opacity: 0.6;\n    }\n  "])), function (_a) {
+    var OwnButtonDisconnected = styled(Button)(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n    // border-radius: 0.5rem;\n    color: ", ";\n    border: solid 2px #FFF;\n    // background-clip: content-box, border-box;\n    // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n    //   linear-gradient(90deg, #0d0e21, #0d0e21);\n    // animation: ", " ease-in-out 2s infinite;\n    &:hover {\n      opacity: 0.6;\n    }\n  "], ["\n    // border-radius: 0.5rem;\n    color: ", ";\n    border: solid 2px #FFF;\n    // background-clip: content-box, border-box;\n    // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n    //   linear-gradient(90deg, #0d0e21, #0d0e21);\n    // animation: ", " ease-in-out 2s infinite;\n    &:hover {\n      opacity: 0.6;\n    }\n  "])), function (_a) {
         var theme = _a.theme;
         return (theme.isDark ? "#fff" : "#0ad9e4");
     }, glowing);
-    var OwnButtonConnected = styled(Button)(templateObject_3$c || (templateObject_3$c = __makeTemplateObject(["\n    border-radius: 0.5rem;\n    color: ", ";\n    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);\n    border: solid 3px transparent;\n    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n      linear-gradient(90deg, #42d784, #60d5dc);\n    background-origin: border-box;\n    background-clip: content-box, border-box;\n    box-shadow: ", ";\n  "], ["\n    border-radius: 0.5rem;\n    color: ", ";\n    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);\n    border: solid 3px transparent;\n    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n      linear-gradient(90deg, #42d784, #60d5dc);\n    background-origin: border-box;\n    background-clip: content-box, border-box;\n    box-shadow: ", ";\n  "])), function (_a) {
-        var theme = _a.theme;
-        return (theme.isDark ? "#6DD784" : "#0d0e21");
-    }, function (_a) {
+    var OwnButtonConnected = styled(Button)(templateObject_3$c || (templateObject_3$c = __makeTemplateObject(["\n    border-radius: 0.5rem;\n    color: #FFF;\n    box-shadow: 0 0 6px 0 rgb(157 96 212 / 50%);\n    border: solid 2px #FFF;\n    // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n    //   linear-gradient(90deg, #42d784, #60d5dc);\n    // background-origin: border-box;\n    // background-clip: content-box, border-box;\n    // box-shadow: ", ";\n  "], ["\n    border-radius: 0.5rem;\n    color: #FFF;\n    box-shadow: 0 0 6px 0 rgb(157 96 212 / 50%);\n    border: solid 2px #FFF;\n    // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),\n    //   linear-gradient(90deg, #42d784, #60d5dc);\n    // background-origin: border-box;\n    // background-clip: content-box, border-box;\n    // box-shadow: ", ";\n  "])), function (_a) {
         var theme = _a.theme;
         return (theme.isDark ? "2px 1000px 1px #1f2b46 inset" : "2px 1000px 1px #fff inset");
     });
@@ -3664,7 +3661,7 @@ var templateObject_1$R;
 
 var baseColors = {
     failure: "#e02f58",
-    primary: "#60D5DC",
+    primary: "#FFFFFF",
     primaryBright: "#dd831c",
     primaryDark: "#c25e00",
     secondary: "#d6931a",
@@ -3701,7 +3698,7 @@ var brandColors = {
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#52D784", background: "#1F2B46", backgroundDisabled: "#424037", contrast: "#FFFFFF", invertedContrast: "#0D0F22", input: "#483F5A", inputSecondary: "#8d8857", primaryDark: "#8f8104", tertiary: "#28444A", text: "#452A7A", farmBackground: "#F4F3F6", toggleBackground: "#E6FDFE", textDisabled: "#544786", textSubtle: "#46357B", borderColor: "#61634b", card: "#0D0F22", nav: "#0D0F22", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#52D784", background: "#1F2B46", backgroundDisabled: "#424037", contrast: "#FFFFFF", invertedContrast: "#0D0F22", input: "#090a18", inputSecondary: "#8d8857", primaryDark: "#8f8104", tertiary: "#28444A", text: "#fcfae2", farmBackground: "#452A7A", toggleBackground: "#0D0F22", textDisabled: "#717161", textSubtle: "#6DD784", borderColor: "#61634b", card: "#0D0F22", nav: "#0D0F22", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#c5ebd4", background: "#000000", backgroundDisabled: "#424037", contrast: "#FFFFFF", invertedContrast: "#0D0F22", input: "#090a18", inputSecondary: "#8d8857", primaryDark: "#8f8104", tertiary: "#111c1ee6", text: "#FFFFFF", farmBackground: "#452A7A", toggleBackground: "#0D0F22", textDisabled: "#717161", textSubtle: "#fcfcfc", borderColor: "#61634b", card: "#020202", nav: "#020202", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 

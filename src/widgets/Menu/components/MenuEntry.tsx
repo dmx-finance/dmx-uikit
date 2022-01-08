@@ -33,10 +33,9 @@ const MenuEntry = styled.div<Props>`
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
-  background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
   border-radius: 4px;
-  background-color: ${({ isActive, theme }) => (isActive ? "rgba(96, 213, 220, 0.15)" : "none")};
+  background-color: ${({ isActive, theme }) => (isActive ? "#41575826" : "none")};
 
   a {
     display: flex;
@@ -52,7 +51,7 @@ const MenuEntry = styled.div<Props>`
   &:hover {
     border-radius: 4px;
     background-color: ${({ theme, inSpirit }) =>
-    inSpirit === "noInSpirit" ? theme.colors.tertiary : "rgba(109, 215, 132, 0.15)"};
+    inSpirit === "noInSpirit" ? theme.colors.tertiary : "#4157583b"};
   }
 
   // Safari fix

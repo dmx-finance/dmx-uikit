@@ -4,11 +4,11 @@ import { ToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
 
 const scaleKeyValues = {
   sm: {
-    handleHeight: "16px",
-    handleWidth: "16px",
+    handleHeight: "14px",
+    handleWidth: "14px",
     handleLeft: "2px",
     handleTop: "2px",
-    checkedLeft: "calc(100% - 18px)",
+    checkedLeft: "calc(100% - 16px)",
     toggleHeight: "20px",
     toggleWidth: "36px",
   },
@@ -66,6 +66,7 @@ const StyledToggle = styled.div<ToggleProps>`
   align-items: center;
   background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
   border-radius: 0.5rem;
+  border: 1px solid #333;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
   display: inline-flex;

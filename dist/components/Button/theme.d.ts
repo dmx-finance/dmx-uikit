@@ -17,6 +17,7 @@ export declare const styleVariants: {
     primary: {
         backgroundColor: string;
         color: string;
+        borderColor: string;
     };
     secondary: {
         backgroundColor: string;
@@ -35,6 +36,7 @@ export declare const styleVariants: {
     };
     subtle: {
         backgroundColor: string;
+        borderColor: string;
         color: string;
     };
     danger: {
@@ -52,6 +54,7 @@ export declare const styleVariants: {
     };
     toggle: {
         backgroundColor: string;
+        borderColor: string;
         color: string;
     };
 };

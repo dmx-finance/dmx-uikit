@@ -15,7 +15,7 @@ interface Props extends PanelProps, PushedProps { }
 const Container = styled.div`
   flex: none;
   padding: 8px 0;
-  background: ${({ theme }) => (theme.isDark ? "#0D0E21" : "#E6FDFF")};
+  background: ${({ theme }) => (theme.isDark ? "#040404" : "#E6FDFF")};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,16 +50,16 @@ const Price = styled.div`
   height: ${PRICE_ENTRY_HEIGHT}px;
   padding: 8px;
   border-radius: 4px;
-  background-color: rgba(109, 215, 132, 0.15);
+  background-color: #6dd7840f;
   margin: 0 2px;
   // border-bottom: 1px solid #42BE71;
 `;
 
 const FantomPrice = styled(Price)`
-  background-color: #002943;
-  a {
-    color: #1C9BCA;
-  }
+  background-color: #6dd7840f;
+  // a {
+  //   color: #1C9BCA;
+  // }
 `;
 
 const PanelFooter: React.FC<Props> = ({

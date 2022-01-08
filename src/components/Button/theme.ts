@@ -18,8 +18,9 @@ export const scaleVariants = {
 
 export const styleVariants = {
   [variants.PRIMARY]: {
-    backgroundColor: "primary",
+    backgroundColor: "transparent",
     color: "white",
+    borderColor: "primary",
   },
   [variants.SECONDARY]: {
     backgroundColor: "transparent",
@@ -37,7 +38,8 @@ export const styleVariants = {
     color: "primary",
   },
   [variants.SUBTLE]: {
-    backgroundColor: "farmBackground",
+    backgroundColor: "transparent",
+    borderColor: "primary",
     color: "text",
   },
   [variants.DANGER]: {
@@ -54,7 +56,8 @@ export const styleVariants = {
     boxShadow: "none",
   },
   [variants.TOGGLE]: {
-    backgroundColor: "toggleBackground",
+    backgroundColor: "transparent",
+    borderColor: "primary",
     color: "text",
   },
 };

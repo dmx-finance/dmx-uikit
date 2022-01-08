@@ -46,13 +46,13 @@ const UserBlock: React.FC<Props> = ({ account, login, logout, showMenu }) => {
 `;
 
   const OwnButtonDisconnected = styled(Button)`
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
     color: ${({ theme }) => (theme.isDark ? `#fff` : `#0ad9e4`)};
-    border: solid 3px #0ae4b5;
-    background-clip: content-box, border-box;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-      linear-gradient(90deg, #0d0e21, #0d0e21);
-    animation: ${glowing} ease-in-out 2s infinite;
+    border: solid 2px #FFF;
+    // background-clip: content-box, border-box;
+    // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    //   linear-gradient(90deg, #0d0e21, #0d0e21);
+    // animation: ${glowing} ease-in-out 2s infinite;
     &:hover {
       opacity: 0.6;
     }
@@ -60,14 +60,14 @@ const UserBlock: React.FC<Props> = ({ account, login, logout, showMenu }) => {
 
   const OwnButtonConnected = styled(Button)`
     border-radius: 0.5rem;
-    color: ${({ theme }) => (theme.isDark ? `#6DD784` : `#0d0e21`)};
-    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-    border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
-      linear-gradient(90deg, #42d784, #60d5dc);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: ${({ theme }) => (theme.isDark ? `2px 1000px 1px #1f2b46 inset` : `2px 1000px 1px #fff inset`)};
+    color: #FFF;
+    box-shadow: 0 0 6px 0 rgb(157 96 212 / 50%);
+    border: solid 2px #FFF;
+    // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    //   linear-gradient(90deg, #42d784, #60d5dc);
+    // background-origin: border-box;
+    // background-clip: content-box, border-box;
+    // box-shadow: ${({ theme }) => (theme.isDark ? `2px 1000px 1px #1f2b46 inset` : `2px 1000px 1px #fff inset`)};
   `;
 
   if (!account) {

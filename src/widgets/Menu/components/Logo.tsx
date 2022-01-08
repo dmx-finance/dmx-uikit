@@ -23,12 +23,12 @@ const StyledLink = styled(Link)`
   //   }
   // }
   img.desktop-icon {
-    width: 55px;
+    width: 48px;
     height: auto;
     display: block;
   }
   span.desktop-icon {
-    width: 55px;
+    width: 85px;
     height: auto;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
