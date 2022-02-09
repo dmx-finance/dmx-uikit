@@ -2878,7 +2878,7 @@ var socials$1 = [
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/",
+        href: "https://twitter.com/dearMoon_X",
     },
     // {
     //   label: "Discord",
@@ -2888,17 +2888,17 @@ var socials$1 = [
     {
         label: "Facebook",
         icon: "FacebookIcon",
-        href: "https://www.facebook.com/",
+        href: "https://www.facebook.com/dearmoonx",
     },
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/",
+        href: "https://t.me/dearmoonx_official",
     },
     {
         label: "GitHub",
         icon: "GitHubIcon",
-        href: "https://github.com/",
+        href: "https://github.com/dmx-finance",
     },
     {
         label: "Medium",
@@ -2910,12 +2910,12 @@ var infos = [
     {
         label: "Nomics",
         icon: "NomicsIcon",
-        href: "https://nomics.com/assets/",
+        href: "https://nomics.com/assets/DMX6-dearMoonX?utm_source=twitter&utm_medium=bot&utm_campaign=new_asset&utm_content=dmx6&d=1643756995",
     },
     {
         label: "Website",
         icon: "WebsiteIcon",
-        href: "https://www.spacex.com//",
+        href: "https://www.dearmoonx.com/",
     },
     {
         label: "CBanks",
